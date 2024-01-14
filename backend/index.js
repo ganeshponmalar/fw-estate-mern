@@ -13,6 +13,7 @@ app.use(cors());
 
 mongoose.connect(url, { useNewUrlParser: true });
 const con = mongoose.connection;
+console.log(con)
 
 con.on('open', () => {
 
@@ -29,4 +30,3 @@ app.listen(port, () => {
 
 
 
-  
